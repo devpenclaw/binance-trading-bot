@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
+  "env": {
+    "BINANCE_API_KEY": "@binance_api_key",
+    "BINANCE_SECRET_KEY": "@binance_secret_key"
+  }
+}
